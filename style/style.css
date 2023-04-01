@@ -12,21 +12,98 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  background-color: black;
+}
+
+:root{
+  --clr-Pale-blue: hsl(225, 100%, 94%);
+  --clr-Bright-blue: hsl(245, 75%, 52%);
+  --clr-Very-pale-blue: hsl(225, 100%, 98%);
+  --clr-Desaturated-blue: hsl(224, 23%, 55%);
+  --clr-Dark-blue: hsl(223, 47%, 23%);
 }
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  background-color: #fff;
+  background-color: var(--clr-Pale-blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 25rem;
+  height: auto;
+  background-color: var(--clr-Very-pale-blue);
+  padding-bottom: 5rem ;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.card-img{
+  border-top-right-radius:20px ;
+  border-top-left-radius:20px;
+}
+.card-title{
+  font-size: 2rem;
+  color: var(--clr-Dark-blue);
+  text-align: center;
+  font-weight: 900;
+}
+.card-discription{
+  font-size:23px;
+  color: var(--clr-Desaturated-blue);
+  text-align: center;
+  font-weight: 200;
 }
 
-/* global css */
 img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
 }
-
+.card-container-two{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.card-audio-img{
+  margin-left: 30px;
+  width: 4.5rem;
+}
+.card-annualplan{
+  color: var(--clr-Dark-blue);
+  font-size: 22px;
+}
+.rate{
+  color:var(--clr-Desaturated-blue) ;
+  font-weight: 200;
+}
+.link{
+  margin-right: 40px;
+  color: var(--clr-Bright-blue);
+  font-weight: 700;
+}
+.card-container-three{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.btn btn-blue{
+  color: var(--clr-Bright-blue);
+  
+}
+.card-cancel{
+  color: var(--clr-Desaturated-blue);
+  margin-bottom: -50px;
+}
 a {
   text-decoration: none;
 }
@@ -35,12 +112,7 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+
 
 .btn {
   display: inline-block;
@@ -52,12 +124,12 @@ li {
   font-weight: 500;
   cursor: pointer;
   /* customize */
-  background-color: #1c2042;
+  background-color: var(--clr-Bright-blue);
   color: white;
-  border: 2px solid #1c2042;
+  border: 2px solid var(--clr-Bright-blue);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 375px) {
 }
 
 /* Medium devices (tablets) */
