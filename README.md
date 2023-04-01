@@ -43,5 +43,5 @@ Use this section to recap over some of your major learnings while working throug
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/rahulvr29/order-summary-component
+- Live Site URL: https://dynamic-queijadas-df020a.netlify.app
